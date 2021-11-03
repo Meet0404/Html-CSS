@@ -1,80 +1,273 @@
+<!DOCTYPE html>
 <html>
-<!-- <head> tag is used to set the title of a table on the page-->
-	<head>
-		<title>MeetPatel</title>
-	</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-	<!-- <body> tag is used to indicate the main body part of the page and the style attribute is used to allocate a background colour to the site-->
-	<body style="background-color: #0F78A9;">
 
-		<!-- <center> tag is used align the text below it to align to centre of the column or row -->
-		<center> 
-			<img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.6435-9/71105751_1131548337039098_2155734211456139264_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=-V5-xsVFqrgAX_npvpk&tn=yZoe-81zTOazToM4&_nc_ht=scontent-yyz1-1.xx&oh=22e012cb8f5f109e531d9d2944552367&oe=6171BF71" width="310"></src></img>
-		</center>
-		
+* {
+  box-sizing: border-box;
+}
 
-		<center>
-		<!-- <table> tag is used to create a table on the page-->
-		<table border="1"style="background-color: #FFC300;">
-			<p>
-				<center><tr> <th><br><h1> MEET PATEL </br>  Computer Science Student </br></h1></tr></center>
-			<p>
-		</table>
-	</center>
-	<br>
-</br>
-		<center>
+.main {
+  float: left;
+  width: 60%;
+  padding: 31px;
+  
+}
 
-		<!-- <table> tag is used to create table and border attribute is used to allocate border to the table -->
-		<table border="1"style="background-color: #FFFFFF;"> 
-				<!-- <tr> tag is used assign the names to the columns in the first row -->
-				<tr>
-					<th><b><u>Education</u></th> <th><u>Skills</u></th> <th><u>Contact</u></b></th> 
-				</tr>
-				<tr>
+.right {
+  background-color: #e5e5e5;
+  font-size: 15px;
+  float: left;
+  width: 36%;
+  padding: 10px;
+  text-align: center;
+}
+ .link { 
+  color: white; 
+ }
 
-				<td>
-					<center>
-						<p>	
-							<!-- <img> tag is used to show the logo of brock on the table -->
-							<br><img src="https://seeklogo.com/images/B/brock-university-logo-4AA9CA3B98-seeklogo.com.png" width="100"></src></img></br>
-							<!-- <br> tag is used to input the data into new line -->
-							<br><b>BROCK UNIVERSITY</b></br>
-							<br>Bsc. Computer Science</br>
-							<br> Sept. 2020 - June 2025 </br>
-					</center>
-				</td> 
+.sidebrdr{
+  border-left-style: solid;
+  border-left-color: #52B461;
+}
 
-				<!-- <td> tag is used to input the values to the particular column for this code-->
-				<td>
+.p1:hover{
+  font-weight: 400;
+  background-color: yellow;
+  font-size: 130%;
+}
 
-					<p>
-						<center><br><b>Languages Spoken :</b></br></center>
-						    <center>English, Gujarati, Hindi</center>
-						
-						<br> <center><b>Programming Languages :</b></center>
-						 JAVA,C,C++,HTML,CSS,JS 
-						<br></br>
-					</p>
-				</td> 
+#wrapper {
+  width: 800px;
+  height: auto;
+}
 
-				<!-- <td> tag is used to input the values to the particular column for this code-->
-				<td>
-					<p> <center><b>Email:- </b><a href="mp20dp@brocku.ca"> mp20dp@brocku.ca </a> </center>
-						<br>
-						 <center><b>Phone:-</b> 365-880-6969</center>
-						 </br>
-						<center>
+</style>
+</head>
 
-						<!-- <a> tag is used to reference a link to the particular word which opens the given link on clicking it -->
-						<a href="https://www.linkedin.com/in/meet-patel-0404/"> LinkedIn </a>        
-						<a href="https://www.facebook.com/profile.php?id=100005518266688">  Facebook </a>
-					   </center>
-					</p>
-				</td>
-				</tr>		
-		</table> 
-		</center>
-		
-	</body>
+<!-- in the body tag the colour of the font is black and the fonts are verdana -->  
+<body style="font-family:Verdana;color:#000000;" id="wrapper">
+
+<!-- this div is used to create the top most header of the page -->  
+<div style="background-color:#09411B;font-size:10px;text-align:left;font-weight: normal;"id="head1">
+
+  <!-- in this table the width of the table is 100% of the page-->  
+  <table style="width:100%">
+    <tr>
+      <td style="text-align:left">
+        <span style="color:white;">Welcome, Guest</span> <a href="https://www.google.com/?client=safari"><span style="color:lightgreen;">login</a>&emsp;<a href="https://play-lh.googleusercontent.com/SXaV56IeGN04h6Mu-BwumPczseKuqTKOaV9zI6360ycaA4aS18F9BqSuIoldrxyjvZ4"><span style="color:lightgreen;">Sign Up</a>
+      </td>
+
+      <td style="text-align:right;color:white;">
+        Stay updated <a href="https://dashboard.rss.com/auth/sign-up/"><span style="color:lightgreen;">Subscribe via RSS </span> </a>&emsp;&emsp;<a href="https://play.google.com/store/apps/details?id=com.google.android.gm&hl=en&gl=US"><span style="color:lightgreen;">Email Updates</a></span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- this div is used to create the middle part of the header-->  
+<div style="background-color:#00924D;padding:15px;"id="head2">
+  <table>
+    <td style="text-align:left">
+      <h1><span style="color:white; font-weight: normal;">My Blog &emsp;</h1>
+    </td>
+    <td>
+      <h3><span style="color:white;font-weight: normal;">Description of My Blog </h3>
+    </td>
+  </table> 
+</div>
+
+<!-- this div is used to create the third part of the header with the menu buttons -->  
+<div style="background-color:#6AA973;"id="head3">
+  <table>
+    <td>
+      <h3>&emsp;<span class="p1"style="color:black;font-weight: normal;">HOME </span> &emsp;</h3>
+    </td>
+    <td>
+      <h3><span class="p1"style="color:black;font-weight: normal;">ABOUT</span> &emsp;</h3>
+    </td>
+    <td>
+      <h3><span class="p1"style="color:black;font-weight: normal;">BLOG </span>&emsp;</h3>
+    </td>
+    <td>
+      <h3><span class="p1"style="color:black;font-weight: normal;">CONTACT </span>&emsp;</h3>
+    </td>
+     <td>
+      <h3><span style="color:black;"><button onclick="changeCSS()">Colour</button> &emsp;</h3>
+    </td>
+  </table> 
+</div>
+
+<div style="overflow:auto"> 
+
+   <!--  this div is used to design the main contnent of the page-->   
+  <div class="main">
+    <h2>Don't Cancel Chuk!<br>
+      <!--the span tag applies the styles to the vicinity of the span -->  
+      <span style="font-size: 10px; font-display: solid;">on july 01 in <span style="color:#52B461;">General </span>tagged<span style="color:#52B461;"> positions</span> by <span style="color:#52B461;">admin</span></span></br></h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis diam ex. Integer ac nunc sit amet odio blandit maximus. Nam sagittis odio eu est sagittis, et vestibulum nibh vulputate. Ut a lorem a turpis tincidunt bibendum. Etiam ultrices placerat dolor, et elementum urna aliquam bibendum. Duis molestie iaculis augue, id bibendum ipsum semper quis. Donec eget nunc ex. Nam cursus dui risus, non tempor justo lacinia nec. Phasellus nec pellentesque dolor.
+      <!-- ul is used to create the list on a bit right of the upper paragraph-->  
+      <ul>
+        <!-- in this the class of sidebrdr is made in order to apply the thick green line on the left of the paragraph -->  
+        <table class="sidebrdr">
+          <tr>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis diam ex. Integer ac nunc sit amet odio blandit maximus. Nam sagittis odio eu est sagittis, et vestibulum nibh vulputate. Ut a lorem a turpis tincidunt bibendum. Etiam ultrices placerat dolor, et elementum urna aliquam bibendum. Duis molestie iaculis augue, id bibendum ipsum semper quis. Donec eget nunc ex. Nam cursus dui risus, non tempor justo lacinia nec. Phasellus nec pellentesque dolor.
+            </td>
+          </tr>
+       </table>
+       <!-- ul is used to create the list on a bit right of the upper paragraph-->  
+      </ul>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis diam ex. Integer ac nunc sit amet odio blandit maximus. Nam sagittis odio eu est sagittis, et vestibulum nibh vulputate. Ut a lorem a turpis tincidunt bibendum. Etiam ultrices placerat dolor, et elementum urna aliquam bibendum. Duis molestie iaculis augue, id bibendum ipsum semper quis. Donec eget nunc ex. Nam cursus dui risus, non tempor justo lacinia nec. Phasellus nec pellentesque dolor.
+        </p>
+      <h2>Alien Spacecraft found in New Mexico<br><span style="font-size: 10px; font-display: solid;">on july 01 in <span style="color:#52B461;">General </span>tagged<span style="color:#52B461;"> positions</span> by <span style="color:#52B461;">admin</span></span></br></h2>
+      <p>
+        Nullam ex dolor, condimentum interdum leo non, tristique finibus augue. Morbi vitae eros egestas, pretium turpis non, fermentum felis. Nulla vitae lectus volutpat, mollis metus ut, euismod risus. Phasellus dictum fermentum iaculis. Vivamus porttitor semper euismod. Sed ac nunc mattis, pretium elit a, vehicula nisi. Donec iaculis vel tortor ac egestas. Quisque finibus tellus vel arcu porta, id mattis elit placerat. Integer magna urna, pretium non metus id, porta fermentum neque.
+      <!-- ul is used to create the list on a bit right of the upper paragraph-->  
+      <ul>
+        <!-- li tag is used to add the bullet points to the list -->  
+        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li> Praesent quis diam ex.</li>
+        <li> Integer ac nunc sit amet odio blandit maximus.</li>
+      </ul>
+      <span >
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis diam ex. Integer ac nunc sit amet odio blandit maximus. Nam sagittis odio eu est sagittis, et vestibulum nibh vulputate. Ut a lorem a turpis tincidunt bibendum.</span>
+      </p>
+      <h2>Ghostly Goo in your Kitchen Sink?<br><span style="font-size: 10px; font-display: solid;">on july 01 in <span style="color:#52B461;">General </span>tagged<span style="color:#52B461;"> positions</span> by <span style="color:#52B461;">admin</span></span></br></h2>
+      <p>
+        Nullam ex dolor, condimentum interdum leo non, tristique finibus augue. Morbi vitae eros egestas, pretium turpis non, fermentum felis. Nulla vitae lectus volutpat, mollis metus ut, euismod risus. Phasellus dictum fermentum iaculis. Vivamus porttitor semper euismod. Sed ac nunc mattis, pretium elit a, vehicula nisi. Donec iaculis vel tortor ac egestas. Quisque finibus tellus vel arcu porta, id mattis elit placerat. Integer magna urna, pretium non metus id, porta fermentum neque.
+     
+      <!-- heading level 4 with headings 4 font-->  
+      <h4> Header Level 4</h4>
+      <!-- ol is used to make bullet points with the numbers -->  
+      <ol>
+        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li> Praesent quis diam ex.</li>
+      </ol>
+      <ul>
+        <!-- in this the class of sidebrdr is made in order to apply the thick green line on the left of the paragraph -->
+        <table class="sidebrdr">
+          <tr>
+            <td>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis diam ex. Integer ac nunc sit amet odio blandit maximus. Nam sagittis odio eu est sagittis, et vestibulum nibh vulputate. Ut a lorem a turpis tincidunt bibendum.
+          </td>
+          </tr>
+       </table>
+      </ul>
+      
+      <!-- header level with h3 heading font-->  
+      <h3> Header Level 3</h3>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        <li>Praesent quis diam ex.</li>
+     </ul>
+      <ol> 
+        <li>Integer ac nunc sit amet odio blandit maximus.</li>
+        <li>Nam sagittis odio eu est sagittis</li>
+      </ol>
+
+    </p>
+
+  </div>
+
+  <!-- this div is used to make the border box of the page which is on the right side of the page using the basics tags i.e. a,ul,table -->  
+  <div class="right" style="text-align:left;">
+    
+    <table>
+      <tr>
+      <td>
+        <h4>Categories</h4>
+        <ul>
+          <a href="https://www.google.com/?client=safari">General </a>
+          <br><a href="https://theconversation.com/the-top-three-scientific-explanations-for-ghost-sightings-58259">Ghost Sightings</a>
+          <br><a href="https://en.wikipedia.org/wiki/Category:UFO_crashes">UFO crashes
+          <br><a href="https://www.nytimes.com/2021/06/24/us/politics/ufo-report-us-pentagon.html">Government Coverups</a>
+          <br><a href="https://www.npr.org/2021/06/04/1003262749/how-ufo-sightings-went-from-conspiracy-theory-to-a-serious-government-inquiry">International conspirancies</br></a>
+        </ul>
+       </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>Recent Posts</h4>
+          <ul>
+            <a href="https://www.housebeautiful.com/lifestyle/g22635979/real-life-haunted-house-stories/">Ghost sightings in mansion</a>
+            <br><a href="https://www.scientificamerican.com/article/alien-hunters-discover-mysterious-signal-from-proxima-centauri/">UFO picked up by satelities</a>
+            <br><a href="https://omrf.org/findings/are-there-mutants-among-us/">Mutants among us?</a>
+            <br><a href="https://www.livescience.com/24598-bigfoot.html">Bigfoot: Fact or Fiction?</a>
+         </ul>
+        </td>
+      </tr>
+
+      <tr>
+       <td>
+         <h4>Archives</h4>
+         <ul>
+           <a href="https://en.wikipedia.org/wiki/Portal:Current_events/June_2008">June 2008</a>
+           <br><a href="https://en.wikipedia.org/wiki/Portal:Current_events/May_2008">May 2008</a>
+           <br><a href="https://www.onthisday.com/events/date/2008/april">April 2008</a>
+           <br><a href="https://www.onthisday.com/events/date/2008/march">March 2008</br>
+          </ul>
+       </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- this div is used to make the bottom most part of the web page with padding and leaving spaces on the top of the content --> 
+<div style="background-color:#09411B;text-align:center;padding:10px;margin-top:7px;"id="head4">
+  <table style="font-color: white;font-size: 13px; color:white; width:100%;">
+    <tr>
+      <th style="text-align:left;color:yellowgreen;"> Links</th>
+    
+      <th style="text-align:left;color:yellowgreen;"> Follow our updates</th>  
+
+      <th style=" text-align:right; color:yellowgreen;font-size:9px;"> Copyright &#169; 2009<br> All rights reserved</th>
+    
+    </tr>
+  
+    <tr = style="text-align:left;">
+      <td><a class="link"href="https://www.google.com/">PSDtuts - Photosohip tutorials</a></td>
+      <td><a class="link"href="https://www.google.com/">Subscribe to RSS Feed</a></td>
+    </tr>
+    <tr class="link" style="text-align:left">
+      <td><a class="link"href="https://www.google.com/">NetTuts - Web development and design tutorials </a> </td>
+      <td><a class="link"href="https://www.google.com/">What is RSS?</a></td>
+    </tr>
+    <tr style="text-align:left">
+      <td><a class="link"href="https://www.google.com/">VectorTuts - Illustrator and vector tutorials </a></td>
+      <td><a class="link"href="https://www.google.com/">Email Updates</a></td>
+    </tr>
+    <tr  style="text-align:left">
+      <td><a class="link" href="https://www.google.com/">FlashTuts-Adobe Flash tutorials </a></td>
+    </tr>
+  </table>
+  </div>
+</body>
+
+<!-- this is used to change the colour of the div with the ids head1, head2, head3, head4 from green to blue and then back to green with the  function changeCSS--> 
+<script>
+    var count=0;
+  function changeCSS(){
+   if (count == 0){
+      document.getElementById("head1").style.backgroundColor = "#03598A";
+      document.getElementById("head2").style.backgroundColor = "#27ABC5";
+      document.getElementById("head3").style.backgroundColor = "#29BDDA";
+      document.getElementById("head4").style.backgroundColor = "#03598A";
+      count=1;        
+    }
+    else
+    {
+      document.getElementById("head1").style.backgroundColor =  "#09411B" ;
+      document.getElementById("head2").style.backgroundColor = "#00924D" ;
+      document.getElementById("head3").style.backgroundColor =  "#6AA973" ;
+      document.getElementById("head4").style.backgroundColor =  "#09411B" ;
+      count=0;
+    }
+  }
+  
+</script>
 </html>
